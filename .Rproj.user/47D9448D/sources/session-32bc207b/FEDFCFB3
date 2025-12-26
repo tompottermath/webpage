@@ -3,7 +3,7 @@
     "path": "~/GitHub/github.io/index.html",
     "project_path": "index.html",
     "type": "html",
-    "hash": "1807656679",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1766708621107.0,
@@ -11,14 +11,16 @@
     "relative_order": 1,
     "properties": {
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "16,17",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1766708432,
+    "lastKnownWriteTime": 1766709361,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1766708432,
+    "last_content_update": 1766709361072,
     "read_only": false,
     "read_only_alternatives": []
 }
