@@ -62,7 +62,7 @@ img {
 
 .imagesmall { 
    position: relative; 
-   width: 25%; /* for IE 6 */
+   width: max(25%, 400px); /* for IE 6 */
    padding: 10px; 
     margin-left: 10;
   margin-right: auto; 
