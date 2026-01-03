@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <title>Tom Potter</title>
+   
+	
+	<style>
+
+body { height: 100%; width: 100%; margin: 0; }
+
+div {
+
+  display: block;
+
+  background: white;
+
+  height: 100%;
+
+  position: relative;
+
+}
+
+img {
+
+  max-width: 100%;
+
+  max-height: 100%;
+
+  margin: 0 auto;
+
+  width: auto;
+
+  display: block;
+}
+
+.image-container {
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+  width: 100%; /* Or specific width/height */
+  height: 200px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  display: block;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Apply a linear gradient from black with 90% opacity at the bottom to transparent at 50% height */
+  background: linear-gradient(0deg,  #FFFFFF 0%,  rgba(0,0,0,0) 20%);
+}
+
+
+
+.imagesmall { 
+   position: relative; 
+   width: max(25%, 400px); /* for IE 6 */
+   padding: 10px; 
+    margin-left: 10;
+  margin-right: auto; 
+}
+
+.gentext {
+ position: relative; 
+   top: 0px; 
+   left: 20px; 
+   width:60%;   
+   padding: 30px;  
+   margin-left: auto;  
+   margin-right: auto;  
+}
+
+
+h2 { 
+   position: absolute; 
+   top: -10px; 
+   left: 0px; 
+   width: 100%; 
+}
+
+h2 span { 
+   color: white; 
+   font: normal 24px/20px Georgia; 
+   letter-spacing: 0px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, .2);
+   padding: 10px; 
+}
+
+h2 span.spacer {
+  padding:0 5px;
+}
+
+a:hover {
+  color: violet; /* Color when the mouse is over the link */
+}
+
+</style>
+  </head>
+  
+  
+  <body>
+
+<!-- <div class="image">
+
+      <img src="images/sunset2.jpg" alt="Sunset in Sydney, NS" >
+
+   <h2><span class='spacer'>Tom's Webpage</span></h2> 
+
+</div>-->
+
+<div class="image-container">
+  <img src="images/sunset2.jpg" alt="Sunset in Sydney, NS" >
+</div>
+
+
+ <div class="imagesmall" >
+        <img alt="picture of me" src="./images/20251111_144100.jpg" loading="lazy">
+    </div>
+ 
+   
+  
+  
+
+  <div class="gentext">
+    <h1> Teaching and Outreach</h1>
+    <h3>Recent Teaching<br></h3>
+    <ul>
+    <li>Calculus with Precalculus (Math 1101)</li>
+    <li>Calculus I (Math 1105)</li>
+    <li>Stat I (Math 1109)</li>
+    <li>Stat II (Math 2409)</li>
+    <li>Elementary Mathematical Statisitics Lab (Math 2106L)</li>
+    </ul>
+   <h3>Outreach<br></h3>
+  <p >  For several years I have gone to schools in HRM and throughout Nova Scotia to help promote math literacy and enthusiasm. 
+    I worked as presenter and content developer for NS Math Circles from 2018 to 2020, and as Director from August 2020 to June 2024. 
+    In summer 2024 I started as a lecturer at CBU, but have continued to visit schools in the CBRM for outreach and recruitment activities. 
+    This has been a fantastic and enriching opportunity for me.<br></p>
+     <h3>Teaching Philosophy<br></h3>
+     <p>I think that a good teacher, like a good coach, works with a 
+    person's natural abilities, and helps to achieve their personal best.<br></p>
+  </div>
+  
+  <div class="gentext" >
+    <h1 >Research and Annotations</h1>
+    <ul>
+     <!-- <li> <a href="https://hdl.handle.net/10222/85472" title="PhD Thesis">Ph.D. Thesis</a></li>-->
+     <li> <a href="docs/thesis.pdf" title="PhD Thesis">Ph.D. Thesis</a></li>
+      <li> <a href="docs/NotesKadisonRingroseVolume1.pdf" title="Kadison Ringrose Notes" >Some annotations for Kadison and Ringrose's Operator Algebras, Vol. 1</a></li>
+      <li> <a href="docs/Takesakivol1notes.pdf" title="Takesaki Notes" >Some annotationsfor Takesaki's Operator Algebras, Vol. 1</a></li>
+      <li> <a href="docs/notesforKeiths1.pdf" title="KFT Notes">Some annotations on a paper by Keith F. Taylor</a></li>
+      <li> <a href="docs/waveletsets.pdf" title="Wavelets Notes">Notes on Wavelets in ℝ<sup>d</sup></a></li>
+      <li> <a href="docs/functionalanalysisnotes.pdf" title="Hilbert Space Notes">Rudiments of Hilbert Space Theory</a></li>
+      <li> <a href="docs/eigengappaperrevised.pdf" title="Eigengaps">A Result on Eigengaps<br></a></li>
+    </ul>
+  </div>
+  
+  <div class="gentext" >
+    <h1>About Me</h1>
+    <a  href="docs/C.V. 2025.pdf" title="CV">C.V.</a>
+    <p>I love mathematics. My other interests include literature, music, and walking.</p>
+  </div>
+  
+  <div class="gentext">
+    <h1 >Contact</h1>
+    <p >E-mail: tom_potter@cbu.ca<br>Phone: 902 478 2250<br>Office: A129-B, Arsenault-Britten Building, CBU<br><br></p>
+  </div>
+
+
+  </body>
+</html>
+<!--	
+  <link rel="stylesheet" href="https://github.com/tompotter1986-dot/github.io/tree/main/css/vanillacss.min.css">
+  <link rel="stylesheet" href="https://github.com/tompotter1986-dot/github.io/tree/main/css/wireframe-theme.min.css">
+   <link rel="stylesheet" href="https://github.com/tompotter1986-dot/github.io/tree/main/css/main.css">
+   -->
